@@ -402,8 +402,8 @@ TestExecutionListener configuration
 Context management
 Dependency injection of test fixtures
 Testing request and session scoped beans
-Transaction management
-Executing SQL scripts
+事务管理
+执行SQL脚本
 TestContext Framework support classes
 11.3.6. Spring MVC Test Framework
 Server-Side Tests
@@ -412,23 +412,23 @@ Client-Side REST Tests
 11.4. 更多资源
 IV. 数据访问
 12. 事务管理
-12.1. Introduction to Spring Framework transaction management
+12.1. Spring框架事务管理介绍
 12.2. Advantages of the Spring Framework’s transaction support model
-12.2.1. Global transactions
-12.2.2. Local transactions
-12.2.3. Spring Framework’s consistent programming model
+12.2.1. 全局事务
+12.2.2. 本地事务
+12.2.3. Spring框架统一的编程模型
 12.3. Understanding the Spring Framework transaction abstraction
 12.4. Synchronizing resources with transactions
 12.4.1. High-level synchronization approach
 12.4.2. Low-level synchronization approach
 12.4.3. TransactionAwareDataSourceProxy
-12.5. Declarative transaction management
+12.5. 声明式事务管理
 12.5.1. Understanding the Spring Framework’s declarative transaction implementation
 12.5.2. Example of declarative transaction implementation
 12.5.3. Rolling back a declarative transaction
 12.5.4. Configuring different transactional semantics for different beans
 12.5.5. <tx:advice/> settings
-12.5.6. Using @Transactional
+12.5.6. 使用@Transactional
 @Transactional settings
 Multiple Transaction Managers with @Transactional
 Custom shortcut annotations
@@ -448,24 +448,24 @@ Specifying transaction settings
 12.8.2. Oracle WebLogic Server
 12.9. Solutions to common problems
 12.9.1. Use of the wrong transaction manager for a specific DataSource
-12.10. Further Resources
-13. DAO support
-13.1. Introduction
-13.2. Consistent exception hierarchy
+12.10. 更多资源
+13. DAO支持
+13.1. 介绍
+13.2. 统一的异常层次结构
 13.3. Annotations used for configuring DAO or Repository classes
-14. Data access with JDBC
+14. 使用JDBC进行数据访问
 14.1. Introduction to Spring Framework JDBC
 14.1.1. Choosing an approach for JDBC database access
-14.1.2. Package hierarchy
+14.1.2. 包层次结构
 14.2. Using the JDBC core classes to control basic JDBC processing and error handling
 14.2.1. JdbcTemplate
-Examples of JdbcTemplate class usage
-JdbcTemplate best practices
+JdbcTemplate类的使用示例
+JdbcTemplate类的最佳实践
 14.2.2. NamedParameterJdbcTemplate
 14.2.3. SQLExceptionTranslator
-14.2.4. Executing statements
+14.2.4. 执行语句
 14.2.5. Running queries
-14.2.6. Updating the database
+14.2.6. 更新数据库
 14.2.7. Retrieving auto-generated keys
 14.3. Controlling database connections
 14.3.1. DataSource
@@ -477,7 +477,7 @@ JdbcTemplate best practices
 14.3.7. TransactionAwareDataSourceProxy
 14.3.8. DataSourceTransactionManager
 14.3.9. NativeJdbcExtractor
-14.4. JDBC batch operations
+14.4. JDBC批处理操作
 14.4.1. Basic batch operations with the JdbcTemplate
 14.4.2. Batch operations with a List of objects
 14.4.3. Batch operations with multiple batches
@@ -498,19 +498,19 @@ JdbcTemplate best practices
 14.6.4. StoredProcedure
 14.7. Common problems with parameter and data value handling
 14.7.1. Providing SQL type information for parameters
-14.7.2. Handling BLOB and CLOB objects
+14.7.2. 处理BLOB和CLOB对象
 14.7.3. Passing in lists of values for IN clause
 14.7.4. Handling complex types for stored procedure calls
-14.8. Embedded database support
-14.8.1. Why use an embedded database?
-14.8.2. Creating an embedded database instance using Spring XML
+14.8. 嵌入式数据库的支持
+14.8.1. 为什么使用嵌入式数据库?
+14.8.2. 使用Spring XML创建一个嵌入式数据库实例
 14.8.3. Creating an embedded database instance programmatically
 14.8.4. Extending the embedded database support
-14.8.5. Using HSQL
-14.8.6. Using H2
-14.8.7. Using Derby
+14.8.5. 使用HSQL
+14.8.6. 使用H2
+14.8.7. 使用Derby
 14.8.8. Testing data access logic with an embedded database
-14.9. Initializing a DataSource
+14.9. 实例化一个DataSource
 14.9.1. Initializing a database instance using Spring XML
 Initialization of Other Components that Depend on the Database
 15. Object Relational Mapping (ORM) Data Access
@@ -541,7 +541,7 @@ Dealing with multiple persistence units
 15.5.3. Transaction Management
 15.5.4. JpaDialect
 16. Marshalling XML using O/X Mappers
-16.1. Introduction
+16.1. 介绍
 16.1.1. Ease of configuration
 16.1.2. Consistent Interfaces
 16.1.3. Consistent Exception Hierarchy
@@ -671,27 +671,27 @@ The forward: prefix
 17.16.9. Path Matching
 17.16.10. Advanced Customizations with MVC Java Config
 17.16.11. Advanced Customizations with the MVC Namespace
-18. View technologies
-18.1. Introduction
+18. 视图技术
+18.1. 介绍
 18.2. JSP & JSTL
 18.2.1. View resolvers
 18.2.2. Plain-old JSPs versus JSTL
 18.2.3. Additional tags facilitating development
-18.2.4. Using Spring’s form tag library
-Configuration
-The form tag
-The input tag
-The checkbox tag
-The checkboxes tag
-The radiobutton tag
-The radiobuttons tag
-The password tag
-The select tag
-The option tag
-The options tag
-The textarea tag
-The hidden tag
-The errors tag
+18.2.4. 使用Spring的表单标签库
+配置
+form标签
+input标签
+checkbox标签
+checkboxes标签
+radiobutton标签
+radiobuttons标签
+password标签
+select标签
+option标签
+options标签
+textarea标签
+hidden标签
+errors标签
 HTTP Method Conversion
 HTML5 Tags
 18.3. Tiles
@@ -719,9 +719,9 @@ Standard MVC controller code
 Convert the model data to XML
 Defining the view properties
 Document transformation
-18.5.2. Summary
+18.5.2. 总结
 18.6. Document views (PDF/Excel)
-18.6.1. Introduction
+18.6.1. 介绍
 18.6.2. Configuration and setup
 Document view definitions
 Controller code
@@ -743,17 +743,17 @@ Configuring Sub-Report Data Sources
 18.9. XML Marshalling View
 18.10. JSON Mapping View
 18.11. XML Mapping View
-19. Integrating with other web frameworks
-19.1. Introduction
+19. 集成其它web框架
+19.1. 介绍
 19.2. Common configuration
 19.3. JavaServer Faces 1.2
 19.3.1. SpringBeanFacesELResolver (JSF 1.2+)
 19.3.2. FacesContextUtils
 19.4. Apache Struts 2.x
 19.5. Tapestry 5.x
-19.6. Further Resources
+19.6. 更多资源
 20. Portlet MVC Framework
-20.1. Introduction
+20.1. 介绍
 20.1.1. Controllers - The C in MVC
 20.1.2. Views - The V in MVC
 20.1.3. Web-scoped beans
@@ -788,14 +788,14 @@ Configuring Sub-Report Data Sources
 Customizing data binding with @InitBinder
 Configuring a custom WebBindingInitializer
 20.10. Portlet application deployment
-21. WebSocket Support
-21.1. Introduction
+21. WebSocket支持
+21.1. 介绍
 21.1.1. WebSocket Fallback Options
 21.1.2. A Messaging Architecture
 21.1.3. Sub-Protocol Support in WebSocket
-21.1.4. Should I Use WebSocket?
+21.1.4. 我应该使用WebSocket吗?
 21.2. WebSocket API
-21.2.1. Create and Configure a WebSocketHandler
+21.2.1. 创建和配置一个WebSocketHandler
 21.2.2. Customizing the WebSocket Handshake
 21.2.3. WebSocketHandler Decoration
 21.2.4. Deployment Considerations
@@ -825,9 +825,9 @@ Configuring a custom WebBindingInitializer
 21.4.14. Configuration and Performance
 21.4.15. Runtime Monitoring
 21.4.16. Testing Annotated Controller Methods
-VI. Integration
+VI. 集成
 22. Remoting and web services using Spring
-22.1. Introduction
+22.1. 介绍
 22.2. Exposing services using RMI
 22.2.1. Exporting the service using the RmiServiceExporter
 22.2.2. Linking in the service at the client
@@ -846,8 +846,8 @@ VI. Integration
 22.5.3. Exporting web services using the JAX-WS RI’s Spring support
 22.5.4. Accessing web services using JAX-WS
 22.6. JMS
-22.6.1. Server-side configuration
-22.6.2. Client-side configuration
+22.6.1. 服务器端的配置
+22.6.2. 客户端的配置
 22.7. AMQP
 22.8. Auto-detection is not implemented for remote interfaces
 22.9. Considerations when choosing a technology
@@ -869,15 +869,15 @@ BufferedImageHttpMessageConverter
 23. Enterprise JavaBeans (EJB) integration
 23.1. Introduction
 23.2. Accessing EJBs
-23.2.1. Concepts
+23.2.1. 概念
 23.2.2. Accessing local SLSBs
 23.2.3. Accessing remote SLSBs
 23.2.4. Accessing EJB 2.x SLSBs versus EJB 3 SLSBs
 23.3. Using Spring’s EJB implementation support classes
 23.3.1. EJB 3 injection interceptor
 24. JMS (Java Message Service)
-24.1. Introduction
-24.2. Using Spring JMS
+24.1. 介绍
+24.2. 使用Spring JMS
 24.2.1. JmsTemplate
 24.2.2. Connections
 Caching Messaging Resources
@@ -966,11 +966,11 @@ Attachments
 Inline resources
 27.3.2. Creating email content using a templating library
 A Velocity-based example
-28. Task Execution and Scheduling
-28.1. Introduction
+28. 任务执行和调度
+28.1. 介绍
 28.2. The Spring TaskExecutor abstraction
 28.2.1. TaskExecutor types
-28.2.2. Using a TaskExecutor
+28.2.2. 使用TaskExecutor
 28.3. The Spring TaskScheduler abstraction
 28.3.1. the Trigger interface
 28.3.2. Trigger implementations
@@ -989,8 +989,8 @@ A Velocity-based example
 28.6.1. Using the JobDetailFactoryBean
 28.6.2. Using the MethodInvokingJobDetailFactoryBean
 28.6.3. Wiring up jobs using triggers and the SchedulerFactoryBean
-29. Dynamic language support
-29.1. Introduction
+29. 动态语言支持
+29.1. 介绍
 29.2. A first example
 29.3. Defining beans that are backed by dynamic languages
 29.3.1. Common concepts
@@ -1039,26 +1039,26 @@ Available caching SpEL evaluation context
 30.6.6. Dealing with caches without a backing store
 30.7. Plugging-in different back-end caches
 30.8. How can I set the TTL/TTI/Eviction policy/XXX feature?
-VII. Appendices
-31. Migrating to Spring Framework 4.0
+VII. 附录
+31. 迁移到Spring框架4.0版本
 32. Classic Spring Usage
 32.1. Classic ORM usage
 32.1.1. Hibernate
-the HibernateTemplate
+HibernateTemplate
 Implementing Spring-based DAOs without callbacks
 32.1.2. JDO
-JdoTemplate and JdoDaoSupport
+JdoTemplate和JdoDaoSupport
 32.1.3. JPA
-JpaTemplate and JpaDaoSupport
+JpaTemplate和JpaDaoSupport
 32.2. Classic Spring MVC
 32.3. JMS Usage
 32.3.1. JmsTemplate
 32.3.2. Asynchronous Message Reception
 32.3.3. Connections
-32.3.4. Transaction Management
+32.3.4. 事务管理
 33. Classic Spring AOP Usage
 33.1. Pointcut API in Spring
-33.1.1. Concepts
+33.1.1. 概念
 33.1.2. Operations on pointcuts
 33.1.3. AspectJ expression pointcuts
 33.1.4. Convenience pointcut implementations
@@ -1097,9 +1097,9 @@ AbstractAdvisorAutoProxyCreator
 33.9.3. Prototype target sources
 33.9.4. ThreadLocal target sources
 33.10. Defining new Advice types
-33.11. Further resources
+33.11. 更多资源
 34. XML Schema-based configuration
-34.1. Introduction
+34.1. 介绍
 34.2. XML Schema-based configuration
 34.2.1. Referencing the schemas
 34.2.2. the util schema
