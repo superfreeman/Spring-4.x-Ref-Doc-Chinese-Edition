@@ -1,12 +1,12 @@
-I. Overview of Spring Framework
-1. Getting Started With Spring
-2. Introduction to Spring Framework
-2.1. Dependency Injection and Inversion of Control
-2.2. Modules
-2.2.1. Core Container
+I. Spring框架概述
+1. 开始使用Spring
+2. Spring框架介绍
+2.1. 依赖注入和控制反转
+2.2. 模块
+2.2.1. 核心容器
 2.2.2. AOP and Instrumentation
-2.2.3. Messaging
-2.2.4. Data Access/Integration
+2.2.3. 消息
+2.2.4. 数据访问与集成
 2.2.5. Web
 2.2.6. Test
 2.3. Usage scenarios
@@ -17,10 +17,10 @@ Maven "Bill Of Materials" Dependency
 Gradle Dependency Management
 Ivy Dependency Management
 Distribution Zip Files
-2.3.2. Logging
+2.3.2. 日志
 Not Using Commons Logging
-Using SLF4J
-Using Log4J
+使用SLF4J
+使用Log4J
 II. What’s New in Spring Framework 4.x
 3. New Features and Enhancements in Spring Framework 4.0
 3.1. Improved Getting Started Experience
