@@ -8,8 +8,8 @@ I. Spring框架概述
 2.2.3. 消息
 2.2.4. 数据访问与集成
 2.2.5. Web
-2.2.6. Test
-2.3. Usage scenarios
+2.2.6. 测试
+2.3. 使用场景
 2.3.1. Dependency Management and Naming Conventions
 Spring Dependencies and Depending on Spring
 Maven Dependency Management
@@ -38,14 +38,14 @@ II. What’s New in Spring Framework 4.x
 4.3. Web Improvements
 4.4. WebSocket STOMP Messaging Improvements
 4.5. Testing Improvements
-III. Core Technologies
-5. The IoC container
+III. 核心技术
+5. IoC容器
 5.1. Introduction to the Spring IoC container and beans
-5.2. Container overview
+5.2. 容器概述
 5.2.1. Configuration metadata
-5.2.2. Instantiating a container
+5.2.2. 实例化一个容器
 Composing XML-based configuration metadata
-5.2.3. Using the container
+5.2.3. 使用容器
 5.3. Bean overview
 5.3.1. Naming beans
 Aliasing a bean outside the bean definition
@@ -54,7 +54,7 @@ Instantiation with a constructor
 Instantiation with a static factory method
 Instantiation using an instance factory method
 5.4. Dependencies
-5.4.1. Dependency injection
+5.4.1. 依赖注入
 Constructor-based dependency injection
 Setter-based dependency injection
 Dependency resolution process
@@ -1144,32 +1144,32 @@ AbstractAdvisorAutoProxyCreator
 35.7. Meatier examples
 35.7.1. Nesting custom tags within custom tags
 35.7.2. Custom attributes on normal elements
-35.8. Further Resources
+35.8. 更多资源
 36. spring.tld
 36.1. Introduction
-36.2. the bind tag
-36.3. the escapeBody tag
-36.4. the hasBindErrors tag
-36.5. the htmlEscape tag
-36.6. the message tag
-36.7. the nestedPath tag
-36.8. the theme tag
-36.9. the transform tag
-36.10. the url tag
-36.11. the eval tag
+36.2. bind标签
+36.3. escapeBody标签
+36.4. hasBindErrors标签
+36.5. htmlEscape标签
+36.6. message标签
+36.7. nestedPath标签
+36.8. theme标签
+36.9. transform标签
+36.10. url标签
+36.11. eval标签
 37. spring-form.tld
-37.1. Introduction
-37.2. the checkbox tag
-37.3. the checkboxes tag
-37.4. the errors tag
-37.5. the form tag
-37.6. the hidden tag
-37.7. the input tag
-37.8. the label tag
-37.9. the option tag
-37.10. the options tag
-37.11. the password tag
-37.12. the radiobutton tag
-37.13. the radiobuttons tag
-37.14. the select tag
-37.15. the textarea tag
+37.1. 介绍
+37.2. checkbox标签
+37.3. checkboxes标签
+37.4. errors标签
+37.5. form标签
+37.6. hidden标签
+37.7. input标签
+37.8. label标签
+37.9. option标签
+37.10. options标签
+37.11. password标签
+37.12. radiobutton标签
+37.13. radiobuttons标签
+37.14. select标签
+37.15. textarea标签
