@@ -27,7 +27,7 @@ II. Spring框架4.x版本中的新特性
 3.2. 移除过时的包和方法
 3.3. 支持Java 8 (兼容Java 6和Java 7)
 3.4. Java EE 6 和 7
-3.5. Groovy Bean Definition DSL
+3.5. Groovy DSL Bean定义 
 3.6. 核心容器改进
 3.7. General Web Improvements
 3.8. WebSocket, SockJS以及STOMP消息
