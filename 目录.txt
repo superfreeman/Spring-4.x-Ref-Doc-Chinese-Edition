@@ -4,7 +4,7 @@ I. Spring框架概述
 2.1. 依赖注入和控制反转
 2.2. 模块
 2.2.1. 核心容器
-2.2.2. AOP and Instrumentation
+2.2.2. AOP和Instrumentation
 2.2.3. 消息
 2.2.4. 数据访问与集成
 2.2.5. Web
@@ -13,31 +13,31 @@ I. Spring框架概述
 2.3.1. 依赖管理和命名约定
 Spring Dependencies and Depending on Spring
 Maven依赖管理
-Maven "Bill Of Materials" Dependency
+Maven "Bill Of Materials" 依赖
 Gradle依赖管理
 Ivy依赖管理
 Distribution Zip Files
 2.3.2. 日志
-Not Using Commons Logging
+不使用Commons Logging
 使用SLF4J
 使用Log4J
 II. What’s New in Spring Framework 4.x
-3. New Features and Enhancements in Spring Framework 4.0
+3. Spring框架4.0版本中的新特性和增强功能
 3.1. Improved Getting Started Experience
-3.2. Removed Deprecated Packages and Methods
+3.2. 移除过时的包和方法
 3.3. Java 8 (as well as 6 and 7)
 3.4. Java EE 6 and 7
 3.5. Groovy Bean Definition DSL
-3.6. Core Container Improvements
+3.6. 核心容器改进
 3.7. General Web Improvements
 3.8. WebSocket, SockJS, and STOMP Messaging
-3.9. Testing Improvements
-4. New Features and Enhancements in Spring Framework 4.1
-4.1. JMS Improvements
-4.2. Caching Improvements
-4.3. Web Improvements
+3.9. 测试改进
+4. Spring框架4.1版本中的新特性和增强功能
+4.1. JMS改进
+4.2. 缓存改进
+4.3. Web改进
 4.4. WebSocket STOMP Messaging Improvements
-4.5. Testing Improvements
+4.5. 测试改进
 III. 核心技术
 5. IoC容器
 5.1. Spring IoC容器和Bean介绍
@@ -74,9 +74,9 @@ Compound property names
 Limitations and disadvantages of autowiring
 Excluding a bean from autowiring
 5.4.6. 方法注入
-Lookup method injection
+Lookup方法注入
 Arbitrary method replacement
-5.5. Bean scopes
+5.5. Bean作用域
 5.5.1. The singleton scope
 5.5.2. The prototype scope
 5.5.3. Singleton beans with prototype-bean dependencies
@@ -98,8 +98,8 @@ Default initialization and destroy methods
 Combining lifecycle mechanisms
 Startup and shutdown callbacks
 Shutting down the Spring IoC container gracefully in non-web applications
-5.6.2. ApplicationContextAware and BeanNameAware
-5.6.3. Other Aware interfaces
+5.6.2. ApplicationContextAware和BeanNameAware接口
+5.6.3. 其它Aware接口
 5.7. Bean definition inheritance
 5.8. Container Extension Points
 5.8.1. Customizing beans using a BeanPostProcessor
@@ -109,7 +109,7 @@ Example: The RequiredAnnotationBeanPostProcessor
 Example: the Class name substitution PropertyPlaceholderConfigurer
 Example: the PropertyOverrideConfigurer
 5.8.3. Customizing instantiation logic with a FactoryBean
-5.9. Annotation-based container configuration
+5.9. 基于注解的容器配置
 5.9.1. @Required
 5.9.2. @Autowired
 5.9.3. Fine-tuning annotation-based autowiring with qualifiers
@@ -126,12 +126,12 @@ Example: the PropertyOverrideConfigurer
 5.10.6. Naming autodetected components
 5.10.7. Providing a scope for autodetected components
 5.10.8. Providing qualifier metadata with annotations
-5.11. Using JSR 330 Standard Annotations
-5.11.1. Dependency Injection with @Inject and @Named
+5.11. 使用JSR 330标准注解
+5.11.1. 使用@Inject和@Named进行依赖注入
 5.11.2. @Named: a standard equivalent to the @Component annotation
-5.11.3. Limitations of the standard approach
-5.12. Java-based container configuration
-5.12.1. Basic concepts: @Bean and @Configuration
+5.11.3. 标准方法的限制
+5.12. 基于Java的容器配置
+5.12.1. 基本概念: @Bean和@Configuration注解
 5.12.2. Instantiating the Spring container using AnnotationConfigApplicationContext
 Simple construction
 Building the container programmatically using register(Class<?>…)
@@ -143,7 +143,7 @@ Receiving lifecycle callbacks
 Specifying bean scope
 Customizing bean naming
 Bean aliasing
-Bean description
+Bean描述
 5.12.4. 使用@Configuration注解
 Injecting inter-bean dependencies
 Lookup method injection
@@ -158,18 +158,18 @@ Combining Java and XML configuration
 5.13.2. XML Bean definition profiles
 Enabling a profile
 Default profile
-5.13.3. PropertySource Abstraction
-5.13.4. @PropertySource
+5.13.3. PropertySource抽象
+5.13.4. @PropertySource注解
 5.13.5. Placeholder resolution in statements
-5.14. Registering a LoadTimeWeaver
+5.14. 注册一个LoadTimeWeaver
 5.15. Additional Capabilities of the ApplicationContext
 5.15.1. Internationalization using MessageSource
 5.15.2. Standard and Custom Events
 5.15.3. Convenient access to low-level resources
 5.15.4. Convenient ApplicationContext instantiation for web applications
 5.15.5. Deploying a Spring ApplicationContext as a Java EE RAR file
-5.16. The BeanFactory
-5.16.1. BeanFactory or ApplicationContext?
+5.16. BeanFactory
+5.16.1. BeanFactory还是ApplicationContext?
 5.16.2. Glue code and the evil singleton
 6. Resources
 6.1. 介绍
@@ -275,14 +275,14 @@ The #this and #root variables
 9.2.1. Enabling @AspectJ Support
 Enabling @AspectJ Support with Java configuration
 Enabling @AspectJ Support with XML configuration
-9.2.2. Declaring an aspect
-9.2.3. Declaring a pointcut
+9.2.2. 声明一个aspect
+9.2.3. 声明一个pointcut
 Supported Pointcut Designators
 Combining pointcut expressions
 Sharing common pointcut definitions
 示例
 Writing good pointcuts
-9.2.4. Declaring advice
+9.2.4. 声明advice
 Before advice
 After returning advice
 After throwing advice
@@ -292,11 +292,11 @@ Advice parameters
 Advice ordering
 9.2.5. Introductions
 9.2.6. Aspect instantiation models
-9.2.7. Example
+9.2.7. 示例
 9.3. Schema-based AOP support
-9.3.1. Declaring an aspect
-9.3.2. Declaring a pointcut
-9.3.3. Declaring advice
+9.3.1. 声明一个aspect
+9.3.2. 声明一个pointcut
+9.3.3. 声明advice
 Before advice
 After returning advice
 After throwing advice
@@ -432,14 +432,14 @@ IV. 数据访问
 @Transactional settings
 Multiple Transaction Managers with @Transactional
 Custom shortcut annotations
-12.5.7. Transaction propagation
+12.5.7. 事务传播
 Required
 RequiresNew
 Nested
 12.5.8. Advising transactional operations
 12.5.9. Using @Transactional with AspectJ
-12.6. Programmatic transaction management
-12.6.1. Using the TransactionTemplate
+12.6. 编程式事务管理
+12.6.1. 使用TransactionTemplate
 Specifying transaction settings
 12.6.2. Using the PlatformTransactionManager
 12.7. Choosing between programmatic and declarative transaction management
@@ -630,13 +630,13 @@ The forward: prefix
 17.7. Building URIs
 17.7.1. Building URIs to Controllers and methods
 17.7.2. Building URIs to Controllers and methods from views
-17.8. Using locales
+17.8. 使用locales
 17.8.1. Obtaining Time Zone Information
 17.8.2. AcceptHeaderLocaleResolver
 17.8.3. CookieLocaleResolver
 17.8.4. SessionLocaleResolver
 17.8.5. LocaleChangeInterceptor
-17.9. Using themes
+17.9. 使用themes
 17.9.1. Overview of themes
 17.9.2. Defining themes
 17.9.3. Theme resolvers
@@ -905,33 +905,33 @@ DefaultMessageListenerContainer
 24.6.4. Reply management
 24.7. JMS Namespace Support
 25. JMX
-25.1. Introduction
+25.1. 介绍
 25.2. Exporting your beans to JMX
-25.2.1. Creating an MBeanServer
-25.2.2. Reusing an existing MBeanServer
-25.2.3. Lazy-initialized MBeans
-25.2.4. Automatic registration of MBeans
-25.2.5. Controlling the registration behavior
+25.2.1. 创建一个MBeanServer
+25.2.2. 复用一个已存在的MBeanServer
+25.2.3. 延迟加载MBeans
+25.2.4. 自动注册MBeans
+25.2.5. 控制注册行为
 25.3. Controlling the management interface of your beans
-25.3.1. the MBeanInfoAssembler Interface
-25.3.2. Using Source-Level Metadata (Java annotations)
-25.3.3. Source-Level Metadata Types
-25.3.4. the AutodetectCapableMBeanInfoAssembler interface
+25.3.1. MBeanInfoAssembler接口
+25.3.2. 使用源码级别的元数据(Java注解)
+25.3.3. 源码级别的元数据类型
+25.3.4. AutodetectCapableMBeanInfoAssembler接口
 25.3.5. Defining management interfaces using Java interfaces
-25.3.6. Using MethodNameBasedMBeanInfoAssembler
+25.3.6. 使用MethodNameBasedMBeanInfoAssembler
 25.4. Controlling the ObjectNames for your beans
 25.4.1. Reading ObjectNames from Properties
-25.4.2. Using the MetadataNamingStrategy
+25.4.2. 使用MetadataNamingStrategy
 25.4.3. Configuring annotation based MBean export
-25.5. JSR-160 Connectors
-25.5.1. Server-side Connectors
-25.5.2. Client-side Connectors
+25.5. JSR-160连接器
+25.5.1. 服务器端的连接器
+25.5.2. 客户端的连接器
 25.5.3. JMX over Burlap/Hessian/SOAP
 25.6. Accessing MBeans via Proxies
 25.7. Notifications
 25.7.1. Registering Listeners for Notifications
 25.7.2. Publishing Notifications
-25.8. Further Resources
+25.8. 更多资源
 26. JCA CCI
 26.1. Introduction
 26.2. Configuring CCI
@@ -956,13 +956,13 @@ DefaultMessageListenerContainer
 26.4.6. Example for MappingCommAreaOperation usage
 26.5. Transactions
 27. Email
-27.1. Introduction
-27.2. Usage
+27.1. 介绍
+27.2. 使用
 27.2.1. Basic MailSender and SimpleMailMessage usage
-27.2.2. Using the JavaMailSender and the MimeMessagePreparator
-27.3. Using the JavaMail MimeMessageHelper
+27.2.2. 使用JavaMailSender和MimeMessagePreparator
+27.3. 使用JavaMail MimeMessageHelper
 27.3.1. Sending attachments and inline resources
-Attachments
+附件
 Inline resources
 27.3.2. Creating email content using a templating library
 A Velocity-based example
@@ -985,9 +985,9 @@ A Velocity-based example
 28.5.1. The scheduler element
 28.5.2. The executor element
 28.5.3. The scheduled-tasks element
-28.6. Using the Quartz Scheduler
-28.6.1. Using the JobDetailFactoryBean
-28.6.2. Using the MethodInvokingJobDetailFactoryBean
+28.6. 使用Quartz Scheduler
+28.6.1. 使用JobDetailFactoryBean
+28.6.2. 使用MethodInvokingJobDetailFactoryBean
 28.6.3. Wiring up jobs using triggers and the SchedulerFactoryBean
 29. 动态语言支持
 29.1. 介绍
@@ -1008,24 +1008,24 @@ Customizing Groovy objects via a callback
 29.5. Bits and bobs
 29.5.1. AOP - advising scripted beans
 29.5.2. Scoping
-29.6. Further Resources
-30. Cache Abstraction
-30.1. Introduction
-30.2. Understanding the cache abstraction
+29.6. 更多资源
+30. 缓存抽象
+30.1. 介绍
+30.2. 理解缓存抽象
 30.3. Declarative annotation-based caching
-30.3.1. @Cacheable annotation
+30.3.1. @Cacheable注解
 Default Key Generation
 Custom Key Generation Declaration
 Default Cache Resolution
 Custom cache resolution
 Conditional caching
 Available caching SpEL evaluation context
-30.3.2. @CachePut annotation
-30.3.3. @CacheEvict annotation
-30.3.4. @Caching annotation
-30.3.5. @CacheConfig annotation
+30.3.2. @CachePut注解
+30.3.3. @CacheEvict注解
+30.3.4. @Caching注解
+30.3.5. @CacheConfig注解
 30.3.6. Enable caching annotations
-30.3.7. Using custom annotations
+30.3.7. 使用自定义注解
 30.4. JCache (JSR-107) annotations
 30.4.1. Features summary
 30.4.2. Enabling JSR-107 support
@@ -1041,7 +1041,7 @@ Available caching SpEL evaluation context
 30.8. How can I set the TTL/TTI/Eviction policy/XXX feature?
 VII. 附录
 31. 迁移到Spring框架4.0版本
-32. Classic Spring Usage
+32. Spring的典型应用
 32.1. Classic ORM usage
 32.1.1. Hibernate
 HibernateTemplate
@@ -1050,13 +1050,13 @@ Implementing Spring-based DAOs without callbacks
 JdoTemplate和JdoDaoSupport
 32.1.3. JPA
 JpaTemplate和JpaDaoSupport
-32.2. Classic Spring MVC
+32.2. Spring MVC的典型应用
 32.3. JMS Usage
 32.3.1. JmsTemplate
 32.3.2. Asynchronous Message Reception
 32.3.3. Connections
 32.3.4. 事务管理
-33. Classic Spring AOP Usage
+33. Spring AOP的典型应用
 33.1. Pointcut API in Spring
 33.1.1. 概念
 33.1.2. Operations on pointcuts
@@ -1098,18 +1098,18 @@ AbstractAdvisorAutoProxyCreator
 33.9.4. ThreadLocal target sources
 33.10. Defining new Advice types
 33.11. 更多资源
-34. XML Schema-based configuration
+34. 基于Schema的XML配置
 34.1. 介绍
-34.2. XML Schema-based configuration
+34.2. 基于Schema的XML配置
 34.2.1. Referencing the schemas
-34.2.2. the util schema
+34.2.2. util schema
 <util:constant/>
 <util:property-path/>
 <util:properties/>
 <util:list/>
 <util:map/>
 <util:set/>
-34.2.3. the jee schema
+34.2.3. jee schema
 <jee:jndi-lookup/> (simple)
 <jee:jndi-lookup/> (with single JNDI environment setting)
 <jee:jndi-lookup/> (with multiple JNDI environment settings)
@@ -1117,24 +1117,24 @@ AbstractAdvisorAutoProxyCreator
 <jee:local-slsb/> (simple)
 <jee:local-slsb/> (complex)
 <jee:remote-slsb/>
-34.2.4. the lang schema
-34.2.5. the jms schema
-34.2.6. the tx (transaction) schema
-34.2.7. the aop schema
-34.2.8. the context schema
+34.2.4. lang schema
+34.2.5. jms schema
+34.2.6. tx (transaction) schema
+34.2.7. aop schema
+34.2.8. context schema
 <property-placeholder/>
 <annotation-config/>
 <component-scan/>
 <load-time-weaver/>
 <spring-configured/>
 <mbean-export/>
-34.2.9. the tool schema
-34.2.10. the jdbc schema
-34.2.11. the cache schema
-34.2.12. the beans schema
-35. Extensible XML authoring
-35.1. Introduction
-35.2. Authoring the schema
+34.2.9. tool schema
+34.2.10. jdbc schema
+34.2.11. cache schema
+34.2.12. beans schema
+35. 编写可扩展的XML
+35.1. 介绍
+35.2. 编写schema
 35.3. Coding a NamespaceHandler
 35.4. BeanDefinitionParser
 35.5. Registering the handler and the schema
@@ -1146,7 +1146,7 @@ AbstractAdvisorAutoProxyCreator
 35.7.2. Custom attributes on normal elements
 35.8. 更多资源
 36. spring.tld
-36.1. Introduction
+36.1. 介绍
 36.2. bind标签
 36.3. escapeBody标签
 36.4. hasBindErrors标签
