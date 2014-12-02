@@ -266,15 +266,15 @@ The #this and #root variables
 8.5.18. Collection Projection
 8.5.19. Expression templating
 8.6. Classes used in the examples
-9. Aspect Oriented Programming with Spring
+9. Spring面向切面编程
 9.1. 介绍
 9.1.1. AOP相关概念
 9.1.2. Spring AOP capabilities and goals
-9.1.3. AOP Proxies
-9.2. @AspectJ support
-9.2.1. Enabling @AspectJ Support
-Enabling @AspectJ Support with Java configuration
-Enabling @AspectJ Support with XML configuration
+9.1.3. AOP代理
+9.2. @AspectJ支持
+9.2.1. 启用@AspectJ支持
+使用Java配置来启用 @AspectJ支持
+使用XML配置来启用 @AspectJ支持
 9.2.2. 声明一个aspect
 9.2.3. 声明一个pointcut
 Supported Pointcut Designators
@@ -312,8 +312,8 @@ Advice ordering
 9.4.1. Spring AOP or full AspectJ?
 9.4.2. @AspectJ or XML for Spring AOP?
 9.5. Mixing aspect types
-9.6. Proxying mechanisms
-9.6.1. Understanding AOP proxies
+9.6. Proxying机制
+9.6.1. 理解AOP代理
 9.7. Programmatic creation of @AspectJ Proxies
 9.8. Using AspectJ with Spring applications
 9.8.1. Using AspectJ to dependency inject domain objects with Spring
@@ -331,7 +331,7 @@ Environment-specific configuration
 9.9. 更多资源
 10. Spring AOP APIs
 10.1. 介绍
-10.2. Pointcut API in Spring
+10.2. Spring中的Pointcut API
 10.2.1. 概念
 10.2.2. Operations on pointcuts
 10.2.3. AspectJ expression pointcuts
@@ -341,7 +341,7 @@ Dynamic pointcuts
 10.2.5. Pointcut superclasses
 10.2.6. Custom pointcuts
 10.3. Advice API in Spring
-10.3.1. Advice lifecycles
+10.3.1. Advice生命周期
 10.3.2. Advice types in Spring
 Interception around advice
 Before advice
@@ -365,7 +365,7 @@ BeanNameAutoProxyCreator
 DefaultAdvisorAutoProxyCreator
 AbstractAdvisorAutoProxyCreator
 10.9.2. Using metadata-driven auto-proxying
-10.10. Using TargetSources
+10.10. 使用TargetSources
 10.10.1. Hot swappable target sources
 10.10.2. Pooling target sources
 10.10.3. Prototype target sources
@@ -386,14 +386,14 @@ Spring MVC
 11.3. 集成测试
 11.3.1. 概述
 11.3.2. 集成测试目标
-Context management and caching
+上下文管理和缓存
 Dependency Injection of test fixtures
 事务管理
 Support classes for integration testing
 11.3.3. JDBC Testing Support
 11.3.4. 注解
 Spring Testing Annotations
-Standard Annotation Support
+标准注解支持
 Spring JUnit Testing注解
 Meta-Annotation Support for Testing
 11.3.5. Spring TestContext框架
@@ -454,7 +454,7 @@ Specifying transaction settings
 13.2. 统一的异常层次结构
 13.3. Annotations used for configuring DAO or Repository classes
 14. 使用JDBC进行数据访问
-14.1. Introduction to Spring Framework JDBC
+14.1. Spring框架JDBC介绍
 14.1.1. Choosing an approach for JDBC database access
 14.1.2. 包层次结构
 14.2. Using the JDBC core classes to control basic JDBC processing and error handling
@@ -464,7 +464,7 @@ JdbcTemplate类的最佳实践
 14.2.2. NamedParameterJdbcTemplate
 14.2.3. SQLExceptionTranslator
 14.2.4. 执行语句
-14.2.5. Running queries
+14.2.5. 运行查询
 14.2.6. 更新数据库
 14.2.7. Retrieving auto-generated keys
 14.3. 控制数据库连接
@@ -484,8 +484,8 @@ JdbcTemplate类的最佳实践
 14.5. 使用SimpleJdbc类简化JDBC操作
 14.5.1. 使用SimpleJdbcInsert插入数据
 14.5.2. Retrieving auto-generated keys using SimpleJdbcInsert
-14.5.3. Specifying columns for a SimpleJdbcInsert
-14.5.4. Using SqlParameterSource to provide parameter values
+14.5.3. 为SimpleJdbcInsertSpecifying指定列
+14.5.4. 使用SqlParameterSource提供参数值
 14.5.5. 使用SimpleJdbcCall调用存储过程
 14.5.6. 为SimpleJdbcCall显示的声明使用参数
 14.5.7. 如何定义SqlParameters
@@ -500,16 +500,16 @@ JdbcTemplate类的最佳实践
 14.7.1. Providing SQL type information for parameters
 14.7.2. 处理BLOB和CLOB对象
 14.7.3. Passing in lists of values for IN clause
-14.7.4. Handling complex types for stored procedure calls
+14.7.4. 为存储过程调用处理复杂类型
 14.8. 嵌入式数据库的支持
 14.8.1. 为什么使用嵌入式数据库?
 14.8.2. 使用Spring XML创建一个嵌入式数据库实例
-14.8.3. Creating an embedded database instance programmatically
+14.8.3. 用编程的方式创建一个嵌入式数据库实例
 14.8.4. Extending the embedded database support
 14.8.5. 使用HSQL
 14.8.6. 使用H2
 14.8.7. 使用Derby
-14.8.8. Testing data access logic with an embedded database
+14.8.8. 使用嵌入式数据库测试数据访问逻辑
 14.9. 实例化一个DataSource
 14.9.1. Initializing a database instance using Spring XML
 Initialization of Other Components that Depend on the Database
@@ -519,7 +519,7 @@ Initialization of Other Components that Depend on the Database
 15.2.1. Resource and transaction management
 15.2.2. Exception translation
 15.3. Hibernate
-15.3.1. SessionFactory setup in a Spring container
+15.3.1. Spring容器中SessionFactory设置
 15.3.2. Implementing DAOs based on plain Hibernate 3 API
 15.3.3. 声明式事务划分
 15.3.4. 编程式事务划分
@@ -527,7 +527,7 @@ Initialization of Other Components that Depend on the Database
 15.3.6. Comparing container-managed and locally defined resources
 15.3.7. Spurious application server warnings with Hibernate
 15.4. JDO
-15.4.1. PersistenceManagerFactory setup
+15.4.1. PersistenceManagerFactory设置
 15.4.2. Implementing DAOs based on the plain JDO API
 15.4.3. 事务管理
 15.4.4. JdoDialect
@@ -538,18 +538,18 @@ Obtaining an EntityManagerFactory from JNDI
 LocalContainerEntityManagerFactoryBean
 Dealing with multiple persistence units
 15.5.2. Implementing DAOs based on plain JPA
-15.5.3. Transaction Management
+15.5.3. 事务管理
 15.5.4. JpaDialect
 16. Marshalling XML using O/X Mappers
 16.1. 介绍
 16.1.1. Ease of configuration
 16.1.2. Consistent Interfaces
 16.1.3. Consistent Exception Hierarchy
-16.2. Marshaller and Unmarshaller
+16.2. Marshaller和Unmarshaller
 16.2.1. Marshaller
 16.2.2. Unmarshaller
 16.2.3. XmlMappingException
-16.3. Using Marshaller and Unmarshaller
+16.3. 使用Marshaller和Unmarshaller
 16.4. 基于Schema的XML配置
 16.5. JAXB
 16.5.1. Jaxb2Marshaller
@@ -572,12 +572,12 @@ V. Web
 17.1.1. Spring Web MVC特性
 17.1.2. 其它MVC实现的可插入性
 17.2. DispatcherServlet
-17.2.1. Special Bean Types In the WebApplicationContext
+17.2.1. WebApplicationContext中特殊类型的Bean
 17.2.2. Default DispatcherServlet Configuration
 17.2.3. DispatcherServlet Processing Sequence
 17.3. Implementing Controllers
-17.3.1. Defining a controller with @Controller
-17.3.2. Mapping Requests With @RequestMapping
+17.3.1. 使用@Controller定义一个控制器
+17.3.2. 使用@RequestMapping映射请求
 @Controller's and AOP Proxying
 New Support Classes for @RequestMapping methods in Spring MVC 3.1
 URI Template Patterns
@@ -631,35 +631,35 @@ The forward: prefix
 17.7.1. Building URIs to Controllers and methods
 17.7.2. Building URIs to Controllers and methods from views
 17.8. 使用locales
-17.8.1. Obtaining Time Zone Information
+17.8.1. 获取Time Zone信息
 17.8.2. AcceptHeaderLocaleResolver
 17.8.3. CookieLocaleResolver
 17.8.4. SessionLocaleResolver
 17.8.5. LocaleChangeInterceptor
 17.9. 使用themes
-17.9.1. Overview of themes
-17.9.2. Defining themes
+17.9.1. themes概述
+17.9.2. 定义themes
 17.9.3. Theme resolvers
 17.10. Spring’s multipart (file upload) support
-17.10.1. Introduction
+17.10.1. 介绍
 17.10.2. Using a MultipartResolver with Commons FileUpload
 17.10.3. Using a MultipartResolver with Servlet 3.0
 17.10.4. Handling a file upload in a form
 17.10.5. Handling a file upload request from programmatic clients
-17.11. Handling exceptions
+17.11. 异常处理
 17.11.1. HandlerExceptionResolver
 17.11.2. @ExceptionHandler
 17.11.3. Handling Standard Spring MVC Exceptions
 17.11.4. Annotating Business Exceptions With @ResponseStatus
 17.11.5. Customizing the Default Servlet Container Error Page
-17.12. Web Security
+17.12. Web安全
 17.13. Convention over configuration support
 17.13.1. The Controller ControllerClassNameHandlerMapping
 17.13.2. The Model ModelMap (ModelAndView)
 17.13.3. The View - RequestToViewNameTranslator
 17.14. ETag support
 17.15. Code-based Servlet container initialization
-17.16. Configuring Spring MVC
+17.16. 配置Spring MVC
 17.16.1. Enabling the MVC Java Config or the MVC XML Namespace
 17.16.2. Customizing the Provided Configuration
 17.16.3. Interceptors
@@ -714,7 +714,7 @@ Form input generation macros
 HTML escaping and XHTML compliance
 18.5. XSLT
 18.5.1. My First Words
-Bean definitions
+Bean定义
 Standard MVC controller code
 Convert the model data to XML
 Defining the view properties
@@ -730,10 +730,10 @@ Subclassing for PDF views
 18.7. JasperReports
 18.7.1. Dependencies
 18.7.2. 配置
-Configuring the ViewResolver
+配置ViewResolver
 Configuring the Views
 About Report Files
-Using JasperReportsMultiFormatView
+使用JasperReportsMultiFormatView
 18.7.3. Populating the ModelAndView
 18.7.4. Working with Sub-Reports
 Configuring Sub-Report Files
@@ -760,7 +760,7 @@ Configuring Sub-Report Data Sources
 20.2. DispatcherPortlet
 20.3. ViewRendererServlet
 20.4. Controllers
-20.4.1. AbstractController and PortletContentGenerator
+20.4.1. AbstractController和PortletContentGenerator
 20.4.2. Other simple controllers
 20.4.3. Command Controllers
 20.4.4. PortletWrappingController
@@ -799,17 +799,17 @@ Configuring a custom WebBindingInitializer
 21.2.2. Customizing the WebSocket Handshake
 21.2.3. WebSocketHandler Decoration
 21.2.4. Deployment Considerations
-21.2.5. Configuring the WebSocket Engine
+21.2.5. 配置WebSocket引擎
 21.3. SockJS Fallback Options
-21.3.1. Overview of SockJS
-21.3.2. Enable SockJS
+21.3.1. SockJS概述
+21.3.2. 启用SockJS
 21.3.3. HTTP Streaming in IE 8, 9: Ajax/XHR vs IFrame
-21.3.4. Heartbeat Messages
+21.3.4. 心跳消息
 21.3.5. Servlet 3 Async Requests
 21.3.6. CORS Headers for SockJS
-21.3.7. SockJS Client
+21.3.7. SockJS客户端
 21.4. STOMP Over WebSocket Messaging Architecture
-21.4.1. Overview of STOMP
+21.4.1. STOMP概述
 21.4.2. Enable STOMP over WebSocket
 21.4.3. Flow of Messages
 21.4.4. Annotation Message Handling
@@ -835,26 +835,26 @@ VI. 集成
 22.3.1. Wiring up the DispatcherServlet for Hessian and co.
 22.3.2. Exposing your beans by using the HessianServiceExporter
 22.3.3. Linking in the service on the client
-22.3.4. Using Burlap
+22.3.4. 使用Burlap
 22.3.5. Applying HTTP basic authentication to a service exposed through Hessian or Burlap
 22.4. Exposing services using HTTP invokers
 22.4.1. Exposing the service object
 22.4.2. Linking in the service at the client
-22.5. Web services
+22.5. Web服务
 22.5.1. Exposing servlet-based web services using JAX-WS
 22.5.2. Exporting standalone web services using JAX-WS
 22.5.3. Exporting web services using the JAX-WS RI’s Spring support
-22.5.4. Accessing web services using JAX-WS
+22.5.4. 使用JAX-WS访问web服务
 22.6. JMS
 22.6.1. 服务器端的配置
 22.6.2. 客户端的配置
 22.7. AMQP
 22.8. Auto-detection is not implemented for remote interfaces
 22.9. Considerations when choosing a technology
-22.10. Accessing RESTful services on the Client
+22.10. 在客户端访问RESTful服务
 22.10.1. RestTemplate
 Working with the URI
-Dealing with request and response headers
+处理请求和响应头部
 Jackson JSON Views support
 22.10.2. HTTP Message Conversion
 StringHttpMessageConverter
@@ -870,8 +870,8 @@ BufferedImageHttpMessageConverter
 23.1. 介绍
 23.2. 访问EJBs
 23.2.1. 概念
-23.2.2. Accessing local SLSBs
-23.2.3. Accessing remote SLSBs
+23.2.2. 访问本地SLSBs
+23.2.3. 访问远程SLSBs
 23.2.4. Accessing EJB 2.x SLSBs versus EJB 3 SLSBs
 23.3. Using Spring’s EJB implementation support classes
 23.3.1. EJB 3 injection interceptor
@@ -887,16 +887,16 @@ CachingConnectionFactory
 24.2.4. Message Listener Containers
 SimpleMessageListenerContainer
 DefaultMessageListenerContainer
-24.2.5. Transaction management
-24.3. Sending a Message
-24.3.1. Using Message Converters
-24.3.2. SessionCallback and ProducerCallback
-24.4. Receiving a message
-24.4.1. Synchronous Reception
-24.4.2. Asynchronous Reception - Message-Driven POJOs
-24.4.3. the SessionAwareMessageListener interface
-24.4.4. the MessageListenerAdapter
-24.4.5. Processing messages within transactions
+24.2.5. 事务管理
+24.3. 发送消息
+24.3.1. 使用消息转换器
+24.3.2. SessionCallback和ProducerCallback
+24.4. 接收消息
+24.4.1. 同步接收
+24.4.2. 异步接收 - Message-Driven POJOs
+24.4.3. SessionAwareMessageListener接口
+24.4.4. MessageListenerAdapter
+24.4.5. 在事务中处理消息
 24.5. Support for JCA Message Endpoints
 24.6. Annotation-driven listener endpoints
 24.6.1. Enable listener endpoint annotations
@@ -928,12 +928,12 @@ DefaultMessageListenerContainer
 25.5.2. 客户端的连接器
 25.5.3. JMX over Burlap/Hessian/SOAP
 25.6. Accessing MBeans via Proxies
-25.7. Notifications
-25.7.1. Registering Listeners for Notifications
-25.7.2. Publishing Notifications
+25.7. 通知
+25.7.1. 为通知注册监听器
+25.7.2. 发布通知
 25.8. 更多资源
 26. JCA CCI
-26.1. Introduction
+26.1. 介绍
 26.2. 配置CCI
 26.2.1. Connector配置
 26.2.2. Spring中ConnectionFactory的配置
@@ -941,12 +941,12 @@ DefaultMessageListenerContainer
 26.2.4. Using a single CCI connection
 26.3. Using Spring’s CCI access support
 26.3.1. Record conversion
-26.3.2. the CciTemplate
+26.3.2. CciTemplate
 26.3.3. DAO support
 26.3.4. Automatic output record generation
-26.3.5. Summary
+26.3.5. 总结
 26.3.6. Using a CCI Connection and Interaction directly
-26.3.7. Example for CciTemplate usage
+26.3.7. CciTemplate使用示例
 26.4. Modeling CCI access as operation objects
 26.4.1. MappingRecordOperation
 26.4.2. MappingCommAreaOperation
@@ -954,7 +954,7 @@ DefaultMessageListenerContainer
 26.4.4. 总结
 26.4.5. MappingRecordOperation使用示例
 26.4.6. MappingCommAreaOperation使用示例
-26.5. Transactions
+26.5. 事务
 27. Email
 27.1. 介绍
 27.2. 使用
@@ -964,8 +964,8 @@ DefaultMessageListenerContainer
 27.3.1. Sending attachments and inline resources
 附件
 Inline resources
-27.3.2. Creating email content using a templating library
-A Velocity-based example
+27.3.2. 使用模板库创建邮件内容
+一个基于Velocity的示例
 28. 任务执行和调度
 28.1. 介绍
 28.2. Spring TaskExecutor抽象
@@ -1024,9 +1024,9 @@ Available caching SpEL evaluation context
 30.3.3. @CacheEvict注解
 30.3.4. @Caching注解
 30.3.5. @CacheConfig注解
-30.3.6. Enable caching annotations
+30.3.6. 启用缓存注解
 30.3.7. 使用自定义注解
-30.4. JCache (JSR-107) annotations
+30.4. JCache (JSR-107)注解
 30.4.1. Features summary
 30.4.2. Enabling JSR-107 support
 30.5. Declarative XML-based caching
@@ -1051,7 +1051,7 @@ JdoTemplate和JdoDaoSupport
 32.1.3. JPA
 JpaTemplate和JpaDaoSupport
 32.2. Spring MVC的典型应用
-32.3. JMS Usage
+32.3. JMS使用
 32.3.1. JmsTemplate
 32.3.2. Asynchronous Message Reception
 32.3.3. Connections
