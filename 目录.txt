@@ -11,32 +11,32 @@ I. Spring框架概述
 2.2.6. 测试
 2.3. 使用场景
 2.3.1. 依赖管理和命名约定
-Spring Dependencies and Depending on Spring
+Spring依赖项和对Spring的依赖
 Maven依赖管理
 Maven "Bill Of Materials" 依赖
 Gradle依赖管理
 Ivy依赖管理
-Distribution Zip Files
+Zip文件分发
 2.3.2. 日志
 不使用Commons Logging
 使用SLF4J
 使用Log4J
 II. Spring框架4.x版本中的新特性
 3. Spring框架4.0版本中的新特性和增强功能
-3.1. Improved Getting Started Experience
+3.1. 改进的入门体验
 3.2. 移除过时的包和方法
 3.3. 支持Java 8 (兼容Java 6和Java 7)
 3.4. Java EE 6 和 7
 3.5. Groovy Bean Definition DSL
 3.6. 核心容器改进
 3.7. General Web Improvements
-3.8. WebSocket, SockJS, and STOMP Messaging
+3.8. WebSocket, SockJS以及STOMP消息
 3.9. 测试改进
 4. Spring框架4.1版本中的新特性和增强功能
 4.1. JMS改进
 4.2. 缓存改进
 4.3. Web改进
-4.4. WebSocket STOMP Messaging Improvements
+4.4. WebSocket STOMP消息改进
 4.5. 测试改进
 III. 核心技术
 5. IoC容器
@@ -47,7 +47,7 @@ III. 核心技术
 Composing XML-based configuration metadata
 5.2.3. 使用容器
 5.3. Bean概述
-5.3.1. Naming beans
+5.3.1. 命名bean
 为外部bean定义取一个别名
 5.3.2. 实例化Bean
 使用构造器实例化Bean
@@ -77,19 +77,19 @@ Excluding a bean from autowiring
 Lookup方法注入
 Arbitrary method replacement
 5.5. Bean作用域
-5.5.1. The singleton scope
-5.5.2. The prototype scope
+5.5.1. singleton作用域
+5.5.2. prototype作用域
 5.5.3. Singleton beans with prototype-bean dependencies
-5.5.4. Request, session, and global session scopes
+5.5.4. Request, session以及global session作用域
 Initial web configuration
-Request scope
-Session scope
-Global session scope
-Application scope
+Request作用域
+Session作用域
+Global session作用域
+Application作用域
 Scoped beans as dependencies
-5.5.5. Custom scopes
-Creating a custom scope
-Using a custom scope
+5.5.5. 自定义作用域
+创建自定义作用域
+使用自定义作用域
 5.6. Customizing the nature of a bean
 5.6.1. 生命周期回调函数
 初始化回调函数
