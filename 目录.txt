@@ -200,7 +200,7 @@ Other notes relating to wildcards
 7.4.1. Setting and getting basic and nested properties
 7.4.2. Built-in PropertyEditor implementations
 Registering additional custom PropertyEditors
-7.5. Spring Type Conversion
+7.5. Spring类型转换
 7.5.1. Converter SPI
 7.5.2. ConverterFactory
 7.5.3. GenericConverter
@@ -252,12 +252,12 @@ Compiler限制
 关系运算符
 逻辑运算符
 数学运算符
-8.5.8. Assignment
-8.5.9. Types
-8.5.10. Constructors
-8.5.11. Variables
-The #this and #root variables
-8.5.12. Functions
+8.5.8. 赋值
+8.5.9. 类型
+8.5.10. 构造器
+8.5.11. 变量
+#this和#root变量
+8.5.12. 函数
 8.5.13. Bean引用
 8.5.14. Ternary Operator (If-Then-Else)
 8.5.15. The Elvis Operator
@@ -269,7 +269,7 @@ The #this and #root variables
 9. Spring面向切面编程
 9.1. 介绍
 9.1.1. AOP相关概念
-9.1.2. Spring AOP capabilities and goals
+9.1.2. Spring AOP的功能和目标
 9.1.3. AOP代理
 9.2. @AspectJ支持
 9.2.1. 启用@AspectJ支持
@@ -312,7 +312,7 @@ Advice ordering
 9.4.1. Spring AOP or full AspectJ?
 9.4.2. @AspectJ or XML for Spring AOP?
 9.5. Mixing aspect types
-9.6. Proxying机制
+9.6. 代理机制
 9.6.1. 理解AOP代理
 9.7. Programmatic creation of @AspectJ Proxies
 9.8. Using AspectJ with Spring applications
@@ -340,22 +340,22 @@ Static pointcuts
 Dynamic pointcuts
 10.2.5. Pointcut superclasses
 10.2.6. Custom pointcuts
-10.3. Advice API in Spring
+10.3. Spring中的Advice API
 10.3.1. Advice生命周期
-10.3.2. Advice types in Spring
+10.3.2. Spring中的Advice类型
 Interception around advice
 Before advice
 Throws advice
 After Returning advice
 Introduction advice
-10.4. Advisor API in Spring
-10.5. Using the ProxyFactoryBean to create AOP proxies
+10.4. Spring中的Advisor API
+10.5. 使用ProxyFactoryBean来创建AOP代理
 10.5.1. Basics
 10.5.2. JavaBean properties
-10.5.3. JDK- and CGLIB-based proxies
-10.5.4. Proxying interfaces
-10.5.5. Proxying classes
-10.5.6. Using global advisors
+10.5.3. 基于JDK和基于CGLIB的代理
+10.5.4. 代理接口
+10.5.5. 代理类
+10.5.6. 使用全局的advisors
 10.6. Concise proxy definitions
 10.7. Creating AOP proxies programmatically with the ProxyFactory
 10.8. Manipulating advised objects
@@ -370,7 +370,7 @@ AbstractAdvisorAutoProxyCreator
 10.10.2. Pooling target sources
 10.10.3. Prototype target sources
 10.10.4. ThreadLocal target sources
-10.11. Defining new Advice types
+10.11. 定义新的Advice类型
 10.12. 更多资源
 11. 测试
 11.1. Spring测试介绍
