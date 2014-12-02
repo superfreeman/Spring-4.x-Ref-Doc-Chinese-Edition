@@ -29,7 +29,7 @@ II. Spring框架4.x版本中的新特性
 3.4. Java EE 6 和 7
 3.5. Groovy DSL Bean定义 
 3.6. 核心容器改进
-3.7. General Web Improvements
+3.7. 通用的Web改进
 3.8. WebSocket, SockJS以及STOMP消息
 3.9. 测试改进
 4. Spring框架4.1版本中的新特性和增强功能
