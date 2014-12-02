@@ -21,12 +21,12 @@ Distribution Zip Files
 不使用Commons Logging
 使用SLF4J
 使用Log4J
-II. What’s New in Spring Framework 4.x
+II. Spring框架4.x版本中的新特性
 3. Spring框架4.0版本中的新特性和增强功能
 3.1. Improved Getting Started Experience
 3.2. 移除过时的包和方法
-3.3. Java 8 (as well as 6 and 7)
-3.4. Java EE 6 and 7
+3.3. 支持Java 8 (兼容Java 6和Java 7)
+3.4. Java EE 6 和 7
 3.5. Groovy Bean Definition DSL
 3.6. 核心容器改进
 3.7. General Web Improvements
@@ -48,7 +48,7 @@ Composing XML-based configuration metadata
 5.2.3. 使用容器
 5.3. Bean概述
 5.3.1. Naming beans
-Aliasing a bean outside the bean definition
+为外部bean定义取一个别名
 5.3.2. 实例化Bean
 使用构造器实例化Bean
 使用静态工厂方法实例化Bean
@@ -59,7 +59,7 @@ Aliasing a bean outside the bean definition
 基于Setter方法的依赖注入
 依赖解析过程
 依赖注入示例
-5.4.2. Dependencies and configuration in detail
+5.4.2. 依赖项和配置详细介绍
 Straight values (primitives, Strings, and so on)
 References to other beans (collaborators)
 Inner beans
@@ -69,7 +69,7 @@ XML shortcut with the p-namespace
 XML shortcut with the c-namespace
 Compound property names
 5.4.3. 使用depends-on
-5.4.4. Lazy-initialized beans
+5.4.4. 延迟加载beans
 5.4.5. Autowiring collaborators
 Limitations and disadvantages of autowiring
 Excluding a bean from autowiring
@@ -119,7 +119,7 @@ Example: the PropertyOverrideConfigurer
 5.9.7. @PostConstruct和@PreDestroy
 5.10. Classpath scanning and managed components
 5.10.1. @Component and further stereotype annotations
-5.10.2. Meta-annotations
+5.10.2. 元注解
 5.10.3. Automatically detecting classes and registering bean definitions
 5.10.4. Using filters to customize scanning
 5.10.5. Defining bean metadata within components
@@ -181,8 +181,8 @@ Default profile
 6.3.4. ServletContextResource
 6.3.5. InputStreamResource
 6.3.6. ByteArrayResource
-6.4. The ResourceLoader
-6.5. The ResourceLoaderAware interface
+6.4. ResourceLoader
+6.5. ResourceLoaderAware接口
 6.6. Resources as dependencies
 6.7. Application contexts and Resource paths
 6.7.1. Constructing application contexts
@@ -566,12 +566,12 @@ XML Schema-based Configuration
 XML Schema-based Configuration
 16.9. XStream
 16.9.1. XStreamMarshaller
-V. The Web
-17. Web MVC framework
-17.1. Introduction to Spring Web MVC framework
-17.1.1. Features of Spring Web MVC
-17.1.2. Pluggability of other MVC implementations
-17.2. The DispatcherServlet
+V. Web
+17. Web MVC框架
+17.1. Spring Web MVC框架介绍
+17.1.1. Spring Web MVC特性
+17.1.2. 其它MVC实现的可插入性
+17.2. DispatcherServlet
 17.2.1. Special Bean Types In the WebApplicationContext
 17.2.2. Default DispatcherServlet Configuration
 17.2.3. DispatcherServlet Processing Sequence
@@ -695,16 +695,16 @@ errors标签
 HTTP Method Conversion
 HTML5标签
 18.3. Tiles
-18.3.1. Dependencies
-18.3.2. How to integrate Tiles
+18.3.1. 依赖
+18.3.2. 如何集成Tiles
 UrlBasedViewResolver
 ResourceBundleViewResolver
-SimpleSpringPreparerFactory and SpringBeanPreparerFactory
-18.4. Velocity & FreeMarker
-18.4.1. Dependencies
+SimpleSpringPreparerFactory和SpringBeanPreparerFactory
+18.4. Velocity和FreeMarker
+18.4.1. 依赖
 18.4.2. Context configuration
-18.4.3. Creating templates
-18.4.4. Advanced configuration
+18.4.3. 创建模板
+18.4.4. 高级配置
 velocity.properties
 FreeMarker
 18.4.5. Bind support and form handling
@@ -752,13 +752,13 @@ Configuring Sub-Report Data Sources
 19.4. Apache Struts 2.x
 19.5. Tapestry 5.x
 19.6. 更多资源
-20. Portlet MVC Framework
+20. Portlet MVC框架
 20.1. 介绍
-20.1.1. Controllers - The C in MVC
-20.1.2. Views - The V in MVC
+20.1.1. Controllers - MVC中的C
+20.1.2. Views - MVC中的V
 20.1.3. Web-scoped beans
-20.2. The DispatcherPortlet
-20.3. The ViewRendererServlet
+20.2. DispatcherPortlet
+20.3. ViewRendererServlet
 20.4. Controllers
 20.4.1. AbstractController and PortletContentGenerator
 20.4.2. Other simple controllers
@@ -934,10 +934,10 @@ DefaultMessageListenerContainer
 25.8. 更多资源
 26. JCA CCI
 26.1. Introduction
-26.2. Configuring CCI
-26.2.1. Connector configuration
-26.2.2. ConnectionFactory configuration in Spring
-26.2.3. Configuring CCI connections
+26.2. 配置CCI
+26.2.1. Connector配置
+26.2.2. Spring中ConnectionFactory的配置
+26.2.3. 配置CCI连接
 26.2.4. Using a single CCI connection
 26.3. Using Spring’s CCI access support
 26.3.1. Record conversion
@@ -951,9 +951,9 @@ DefaultMessageListenerContainer
 26.4.1. MappingRecordOperation
 26.4.2. MappingCommAreaOperation
 26.4.3. Automatic output record generation
-26.4.4. Summary
-26.4.5. Example for MappingRecordOperation usage
-26.4.6. Example for MappingCommAreaOperation usage
+26.4.4. 总结
+26.4.5. MappingRecordOperation使用示例
+26.4.6. MappingCommAreaOperation使用示例
 26.5. Transactions
 27. Email
 27.1. 介绍
