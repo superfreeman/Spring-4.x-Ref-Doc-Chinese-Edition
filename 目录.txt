@@ -73,7 +73,7 @@ Compound property names
 5.4.5. Autowiring collaborators
 Limitations and disadvantages of autowiring
 Excluding a bean from autowiring
-5.4.6. Method injection
+5.4.6. 方法注入
 Lookup method injection
 Arbitrary method replacement
 5.5. Bean scopes
@@ -116,7 +116,7 @@ Example: the PropertyOverrideConfigurer
 5.9.4. Using generics as autowiring qualifiers
 5.9.5. CustomAutowireConfigurer
 5.9.6. @Resource
-5.9.7. @PostConstruct and @PreDestroy
+5.9.7. @PostConstruct和@PreDestroy
 5.10. Classpath scanning and managed components
 5.10.1. @Component and further stereotype annotations
 5.10.2. Meta-annotations
@@ -137,14 +137,14 @@ Simple construction
 Building the container programmatically using register(Class<?>…)
 Enabling component scanning with scan(String…)
 Support for web applications with AnnotationConfigWebApplicationContext
-5.12.3. Using the @Bean annotation
-Declaring a bean
+5.12.3. 使用@Bean注解
+声明一个bean
 Receiving lifecycle callbacks
 Specifying bean scope
 Customizing bean naming
 Bean aliasing
 Bean description
-5.12.4. Using the @Configuration annotation
+5.12.4. 使用@Configuration注解
 Injecting inter-bean dependencies
 Lookup method injection
 Further information about how Java-based configuration works internally
@@ -172,9 +172,9 @@ Default profile
 5.16.1. BeanFactory or ApplicationContext?
 5.16.2. Glue code and the evil singleton
 6. Resources
-6.1. Introduction
-6.2. The Resource interface
-6.3. Built-in Resource implementations
+6.1. 介绍
+6.2. Resource接口
+6.3. 内置的Resource接口实现
 6.3.1. UrlResource
 6.3.2. ClassPathResource
 6.3.3. FileSystemResource
@@ -239,15 +239,15 @@ Configuring a JSR-303/JSR-349 Validator for use by Spring MVC
 Compiler配置
 Compiler限制
 8.4. Expression support for defining bean definitions
-8.4.1. XML based configuration
-8.4.2. Annotation-based configuration
+8.4.1. 基于XML的配置
+8.4.2. 基于注解的配置
 8.5. Language Reference
 8.5.1. Literal expressions
 8.5.2. Properties, Arrays, Lists, Maps, Indexers
 8.5.3. Inline lists
 8.5.4. Inline Maps
 8.5.5. Array construction
-8.5.6. Methods
+8.5.6. 方法
 8.5.7. 操作符
 Relational operators
 Logical operators
@@ -280,7 +280,7 @@ Enabling @AspectJ Support with XML configuration
 Supported Pointcut Designators
 Combining pointcut expressions
 Sharing common pointcut definitions
-Examples
+示例
 Writing good pointcuts
 9.2.4. Declaring advice
 Before advice
@@ -693,7 +693,7 @@ textarea标签
 hidden标签
 errors标签
 HTTP Method Conversion
-HTML5 Tags
+HTML5标签
 18.3. Tiles
 18.3.1. Dependencies
 18.3.2. How to integrate Tiles
@@ -729,7 +729,7 @@ Subclassing for Excel views
 Subclassing for PDF views
 18.7. JasperReports
 18.7.1. Dependencies
-18.7.2. Configuration
+18.7.2. 配置
 Configuring the ViewResolver
 Configuring the Views
 About Report Files
