@@ -248,10 +248,10 @@ Compiler限制
 8.5.4. Inline Maps
 8.5.5. Array construction
 8.5.6. 方法
-8.5.7. 操作符
-Relational operators
-Logical operators
-Mathematical operators
+8.5.7. 运算符
+关系运算符
+逻辑运算符
+数学运算符
 8.5.8. Assignment
 8.5.9. Types
 8.5.10. Constructors
@@ -326,13 +326,13 @@ A first example
 Aspects
 META-INF/aop.xml
 Required libraries (JARS)
-Spring configuration
+Spring配置
 Environment-specific configuration
-9.9. Further Resources
+9.9. 更多资源
 10. Spring AOP APIs
-10.1. Introduction
+10.1. 介绍
 10.2. Pointcut API in Spring
-10.2.1. Concepts
+10.2.1. 概念
 10.2.2. Operations on pointcuts
 10.2.3. AspectJ expression pointcuts
 10.2.4. Convenience pointcut implementations
@@ -394,12 +394,12 @@ Support classes for integration testing
 11.3.4. 注解
 Spring Testing Annotations
 Standard Annotation Support
-Spring JUnit Testing Annotations
+Spring JUnit Testing注解
 Meta-Annotation Support for Testing
-11.3.5. Spring TestContext Framework
-Key abstractions
-TestExecutionListener configuration
-Context management
+11.3.5. Spring TestContext框架
+关键的抽象
+TestExecutionListener配置
+上下文管理
 Dependency injection of test fixtures
 Testing request and session scoped beans
 事务管理
@@ -417,19 +417,19 @@ IV. 数据访问
 12.2.1. 全局事务
 12.2.2. 本地事务
 12.2.3. Spring框架统一的编程模型
-12.3. Understanding the Spring Framework transaction abstraction
-12.4. Synchronizing resources with transactions
-12.4.1. High-level synchronization approach
-12.4.2. Low-level synchronization approach
+12.3. 理解Spring框架的事务抽象
+12.4. 使用事务同步资源
+12.4.1. 高层次的同步方法
+12.4.2. 低层次的同步方法
 12.4.3. TransactionAwareDataSourceProxy
 12.5. 声明式事务管理
-12.5.1. Understanding the Spring Framework’s declarative transaction implementation
-12.5.2. Example of declarative transaction implementation
-12.5.3. Rolling back a declarative transaction
+12.5.1. 理解Spring框架的声明式事务实现
+12.5.2. 声明式事务实现示例
+12.5.3. 回滚一个声明式事务
 12.5.4. Configuring different transactional semantics for different beans
-12.5.5. <tx:advice/> settings
+12.5.5. <tx:advice/>设置
 12.5.6. 使用@Transactional
-@Transactional settings
+@Transactional设置
 Multiple Transaction Managers with @Transactional
 Custom shortcut annotations
 12.5.7. 事务传播
@@ -441,7 +441,7 @@ Nested
 12.6. 编程式事务管理
 12.6.1. 使用TransactionTemplate
 Specifying transaction settings
-12.6.2. Using the PlatformTransactionManager
+12.6.2. 使用PlatformTransactionManager
 12.7. Choosing between programmatic and declarative transaction management
 12.8. Application server-specific integration
 12.8.1. IBM WebSphere
@@ -467,7 +467,7 @@ JdbcTemplate类的最佳实践
 14.2.5. Running queries
 14.2.6. 更新数据库
 14.2.7. Retrieving auto-generated keys
-14.3. Controlling database connections
+14.3. 控制数据库连接
 14.3.1. DataSource
 14.3.2. DataSourceUtils
 14.3.3. SmartDataSource
@@ -481,15 +481,15 @@ JdbcTemplate类的最佳实践
 14.4.1. Basic batch operations with the JdbcTemplate
 14.4.2. Batch operations with a List of objects
 14.4.3. Batch operations with multiple batches
-14.5. Simplifying JDBC operations with the SimpleJdbc classes
-14.5.1. Inserting data using SimpleJdbcInsert
+14.5. 使用SimpleJdbc类简化JDBC操作
+14.5.1. 使用SimpleJdbcInsert插入数据
 14.5.2. Retrieving auto-generated keys using SimpleJdbcInsert
 14.5.3. Specifying columns for a SimpleJdbcInsert
 14.5.4. Using SqlParameterSource to provide parameter values
-14.5.5. Calling a stored procedure with SimpleJdbcCall
-14.5.6. Explicitly declaring parameters to use for a SimpleJdbcCall
-14.5.7. How to define SqlParameters
-14.5.8. Calling a stored function using SimpleJdbcCall
+14.5.5. 使用SimpleJdbcCall调用存储过程
+14.5.6. 为SimpleJdbcCall显示的声明使用参数
+14.5.7. 如何定义SqlParameters
+14.5.8. 使用SimpleJdbcCall调用存储函数
 14.5.9. Returning ResultSet/REF Cursor from a SimpleJdbcCall
 14.6. Modeling JDBC operations as Java objects
 14.6.1. SqlQuery
@@ -521,15 +521,15 @@ Initialization of Other Components that Depend on the Database
 15.3. Hibernate
 15.3.1. SessionFactory setup in a Spring container
 15.3.2. Implementing DAOs based on plain Hibernate 3 API
-15.3.3. Declarative transaction demarcation
-15.3.4. Programmatic transaction demarcation
-15.3.5. Transaction management strategies
+15.3.3. 声明式事务划分
+15.3.4. 编程式事务划分
+15.3.5. 事务管理策略
 15.3.6. Comparing container-managed and locally defined resources
 15.3.7. Spurious application server warnings with Hibernate
 15.4. JDO
 15.4.1. PersistenceManagerFactory setup
 15.4.2. Implementing DAOs based on the plain JDO API
-15.4.3. Transaction management
+15.4.3. 事务管理
 15.4.4. JdoDialect
 15.5. JPA
 15.5.1. Three options for JPA setup in a Spring environment
@@ -550,20 +550,20 @@ Dealing with multiple persistence units
 16.2.2. Unmarshaller
 16.2.3. XmlMappingException
 16.3. Using Marshaller and Unmarshaller
-16.4. XML Schema-based Configuration
+16.4. 基于Schema的XML配置
 16.5. JAXB
 16.5.1. Jaxb2Marshaller
-XML Schema-based Configuration
+基于Schema的XML配置
 16.6. Castor
 16.6.1. CastorMarshaller
 16.6.2. Mapping
-XML Schema-based Configuration
+基于Schema的XML配置
 16.7. XMLBeans
 16.7.1. XmlBeansMarshaller
-XML Schema-based Configuration
+基于Schema的XML配置
 16.8. JiBX
 16.8.1. JibxMarshaller
-XML Schema-based Configuration
+基于Schema的XML配置
 16.9. XStream
 16.9.1. XStreamMarshaller
 V. Web
@@ -597,9 +597,9 @@ Binding request parameters to method parameters with @RequestParam
 Mapping the request body with the @RequestBody annotation
 Mapping the response body with the @ResponseBody annotation
 Creating REST Controllers with the @RestController annotation
-Using HttpEntity
-Using @ModelAttribute on a method
-Using @ModelAttribute on a method argument
+使用HttpEntity
+在方法上使用@ModelAttribute注解
+在方法参数上使用@ModelAttribute注解
 Using @SessionAttributes to store model attributes in the HTTP session between requests
 Specifying redirect and flash attributes
 Working with "application/x-www-form-urlencoded" data
@@ -611,7 +611,7 @@ Support for the Last-Modified Response Header To Facilitate Content Caching
 Advising controllers with the @ControllerAdvice annotation
 Jackson Serialization View Support
 Jackson JSONP Support
-17.3.4. Asynchronous Request Processing
+17.3.4. 异步请求处理
 Exception Handling for Async Requests
 Intercepting Async Requests
 Configuration for Async Request Processing
@@ -866,9 +866,9 @@ MappingJackson2XmlHttpMessageConverter
 SourceHttpMessageConverter
 BufferedImageHttpMessageConverter
 22.10.3. Async RestTemplate
-23. Enterprise JavaBeans (EJB) integration
-23.1. Introduction
-23.2. Accessing EJBs
+23. 集成Enterprise JavaBeans (EJB)
+23.1. 介绍
+23.2. 访问EJBs
 23.2.1. 概念
 23.2.2. Accessing local SLSBs
 23.2.3. Accessing remote SLSBs
@@ -968,23 +968,23 @@ Inline resources
 A Velocity-based example
 28. 任务执行和调度
 28.1. 介绍
-28.2. The Spring TaskExecutor abstraction
-28.2.1. TaskExecutor types
+28.2. Spring TaskExecutor抽象
+28.2.1. TaskExecutor类型
 28.2.2. 使用TaskExecutor
-28.3. The Spring TaskScheduler abstraction
-28.3.1. the Trigger interface
-28.3.2. Trigger implementations
-28.3.3. TaskScheduler implementations
+28.3. Spring TaskScheduler抽象
+28.3.1. Trigger接口
+28.3.2. Trigger实现
+28.3.3. TaskScheduler实现
 28.4. Annotation Support for Scheduling and Asynchronous Execution
 28.4.1. Enable scheduling annotations
-28.4.2. The @Scheduled Annotation
-28.4.3. The @Async Annotation
+28.4.2. @Scheduled注解
+28.4.3. @Async注解
 28.4.4. Executor qualification with @Async
 28.4.5. Exception management with @Async
-28.5. The Task Namespace
-28.5.1. The scheduler element
-28.5.2. The executor element
-28.5.3. The scheduled-tasks element
+28.5. Task Namespace
+28.5.1. scheduler元素
+28.5.2. executor元素
+28.5.3. scheduled-tasks元素
 28.6. 使用Quartz Scheduler
 28.6.1. 使用JobDetailFactoryBean
 28.6.2. 使用MethodInvokingJobDetailFactoryBean
@@ -994,7 +994,7 @@ A Velocity-based example
 29.2. A first example
 29.3. Defining beans that are backed by dynamic languages
 29.3.1. Common concepts
-The <lang:language/> element
+<lang:language/>元素
 Refreshable beans
 Inline dynamic language source files
 Understanding Constructor Injection in the context of dynamic-language-backed beans
