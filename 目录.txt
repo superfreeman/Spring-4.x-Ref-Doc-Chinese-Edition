@@ -194,11 +194,11 @@ Other notes relating to wildcards
 6.7.3. FileSystemResource caveats
 7. 校验, 数据绑定和类型转换
 7.1. 介绍
-7.2. Validation using Spring’s Validator interface
+7.2. 使用Spring的Validator的接口进行校验
 7.3. Resolving codes to error messages
 7.4. Bean manipulation and the BeanWrapper
 7.4.1. Setting and getting basic and nested properties
-7.4.2. Built-in PropertyEditor implementations
+7.4.2. 内置的PropertyEditor实现
 Registering additional custom PropertyEditors
 7.5. Spring类型转换
 7.5.1. Converter SPI
@@ -223,15 +223,15 @@ Injecting a Validator
 Configuring Custom Constraints
 Spring-driven Method Validation
 Additional Configuration Options
-7.8.3. Configuring a DataBinder
-7.8.4. Spring MVC 3 Validation
+7.8.3. 配置DataBinder
+7.8.4. Spring MVC 3校验
 Triggering @Controller Input Validation
 Configuring a Validator for use by Spring MVC
 Configuring a JSR-303/JSR-349 Validator for use by Spring MVC
 8. Spring表达式语言(SpEL)
 8.1. 介绍
 8.2. 功能概述
-8.3. Expression Evaluation using Spring’s Expression Interface
+8.3. 使用Spring的Expression接口进行表达式计算
 8.3.1. EvaluationContext接口
 类型转换
 8.3.2. Parser配置
@@ -591,12 +591,12 @@ Consumable Media Types
 Producible Media Types
 Request Parameters and Header Values
 17.3.3. Defining @RequestMapping handler methods
-Supported method argument types
-Supported method return types
-Binding request parameters to method parameters with @RequestParam
-Mapping the request body with the @RequestBody annotation
-Mapping the response body with the @ResponseBody annotation
-Creating REST Controllers with the @RestController annotation
+支持的方法参数类型
+支持的方法返回值类型
+使用@RequestParam注解绑定请求参数到方法参数上
+使用@RequestBody注解映射请求体
+使用@ResponseBody注解映射响应体
+使用@RestController注解创建REST风格的Controller
 使用HttpEntity
 在方法上使用@ModelAttribute注解
 在方法参数上使用@ModelAttribute注解
