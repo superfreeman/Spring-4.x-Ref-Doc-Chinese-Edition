@@ -1101,7 +1101,7 @@ AbstractAdvisorAutoProxyCreator
 34. 基于Schema的XML配置
 34.1. 介绍
 34.2. 基于Schema的XML配置
-34.2.1. Referencing the schemas
+34.2.1. 引用schema
 34.2.2. util schema
 <util:constant/>
 <util:property-path/>
@@ -1135,15 +1135,15 @@ AbstractAdvisorAutoProxyCreator
 35. 编写可扩展的XML
 35.1. 介绍
 35.2. 编写schema
-35.3. Coding a NamespaceHandler
+35.3. 编写一个NamespaceHandler
 35.4. BeanDefinitionParser
-35.5. Registering the handler and the schema
+35.5. 注册处理器和schema
 35.5.1. META-INF/spring.handlers
 35.5.2. META-INF/spring.schemas
-35.6. Using a custom extension in your Spring XML configuration
-35.7. Meatier examples
-35.7.1. Nesting custom tags within custom tags
-35.7.2. Custom attributes on normal elements
+35.6. 在Spring XML配置文件中使用自定义的扩展 
+35.7. 丰富的示例
+35.7.1. 自定义标签中嵌套自定义标签
+35.7.2. 在普通元素上自定义属性
 35.8. 更多资源
 36. spring.tld
 36.1. 介绍
