@@ -44,7 +44,7 @@ III. 核心技术
 5.2. 容器概述
 5.2.1. 配置元数据
 5.2.2. 实例化一个容器
-Composing XML-based configuration metadata
+组合基于XML的配置元数据
 5.2.3. 使用容器
 5.3. Bean概述
 5.3.1. 命名bean
@@ -60,11 +60,11 @@ Composing XML-based configuration metadata
 依赖解析过程
 依赖注入示例
 5.4.2. 依赖项和配置详细介绍
-Straight values (primitives, Strings, and so on)
-References to other beans (collaborators)
+直接值(基本类型、字符串等等)
+引用其他bean(collaborators)
 内部beans
 Collections
-Null and empty string values
+Null和空字符串
 XML shortcut with the p-namespace
 XML shortcut with the c-namespace
 Compound property names
